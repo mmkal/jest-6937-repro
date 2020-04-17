@@ -1,0 +1,16 @@
+{
+  "name": "jest-6937-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mmkal/jest-6937-repro",
+  "author": "mmkal <misha.kaletsky@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^25.3.0",
+    "slonik": "^22.4.4"
+  },
+  "scripts": {
+    "pretest": "docker-compose up -d && sleep 10",
+    "test": "jest"
+  }
+}
